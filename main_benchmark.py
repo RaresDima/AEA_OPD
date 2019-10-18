@@ -27,14 +27,14 @@ MINIZINC_PATH = r'E:\Tools\MiniZinc\minizinc'
 SOLVER_NAME = 'Gecode'
 SOLVER_PATH = r'E:\Tools\Gecode\bin\fzn-gecode'
 SOLVER_THREADS = 6
-SOLVER_TIME_LIMIT_S = 10
+SOLVER_TIME_LIMIT_S = 100
 
 MODEL_PATH  = r'.\models\FinancialPortfolio-v4.mzn'
 
 V, B, R = 10, 37, 14
-TARGET_LAMBDA = 7
+TARGET_LAMBDA = 6
 
-RUN_COUNT = 100
+RUN_COUNT = 30
 
 # ENVIRONMENT SETUP
 
