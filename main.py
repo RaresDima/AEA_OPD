@@ -17,8 +17,8 @@ from matplotlib import pyplot as plt
 np.set_printoptions(linewidth = 1000)
 
 
-CONFIGURATIONS = {  
-                    'toy_old': 
+CONFIGURATIONS = {
+                    'toy_old':
                     [
                         [10, 37, 14, 10, 0, 0],
                         [10, 37, 14, 9, 0, 0],
@@ -28,7 +28,7 @@ CONFIGURATIONS = {
                         [10, 37, 14, 5, 0, 0],
                     ],
 
-                    'small_old': 
+                    'small_old':
                     [
                         [6, 50, 25, 15, 0, 0],
                         [6, 50, 25, 14, 0, 0],
@@ -38,7 +38,7 @@ CONFIGURATIONS = {
                         [6, 50, 25, 10, 0, 0],
                     ],
 
-                    'medium_old': 
+                    'medium_old':
                     [
                         [10, 100, 30, 15, 0, 0],
                         [10, 100, 30, 14, 0, 0],
@@ -50,7 +50,7 @@ CONFIGURATIONS = {
                         [10, 100, 30, 8, 0, 0],
                     ],
 
-                    'real_old': 
+                    'real_old':
                     [
                         [15, 350, 100, 45, 0, 0],
                         [15, 350, 100, 40, 0, 0],
@@ -63,8 +63,8 @@ CONFIGURATIONS = {
                     ],
 
 
-                    
-                    'toy_improved': 
+
+                    'toy_improved':
                     [
                         [10, 37, 14, 10, 1, 5],
                         [10, 37, 14, 9, 1, 5],
@@ -74,7 +74,7 @@ CONFIGURATIONS = {
                         [10, 37, 14, 5, 1, 5],
                     ],
 
-                    'small_improved': 
+                    'small_improved':
                     [
                         [6, 50, 25, 15, 1, 5],
                         [6, 50, 25, 14, 1, 5],
@@ -84,7 +84,7 @@ CONFIGURATIONS = {
                         [6, 50, 25, 10, 1, 5],
                     ],
 
-                    'medium_improved': 
+                    'medium_improved':
                     [
                         [10, 100, 30, 15, 1, 5],
                         [10, 100, 30, 14, 1, 5],
@@ -96,7 +96,7 @@ CONFIGURATIONS = {
                         [10, 100, 30, 8, 1, 5],
                     ],
 
-                    'real_improved': 
+                    'real_improved':
                     [
                         [15, 350, 100, 45, 1, 5],
                         [15, 350, 100, 40, 1, 5],
@@ -122,7 +122,7 @@ CX_K = 5
 MUT_K = 5
 MUT_GENEPB = 0.25
 
-RUNS_PER_CONFIGURATION = 10
+RUNS_PER_CONFIGURATION = 100
 
 
 def run_opd_ga(toolbox: base.Toolbox,
@@ -205,7 +205,7 @@ def run_opd_ga(toolbox: base.Toolbox,
 
 if __name__ == '__main__':
     # pool = multiprocessing.Pool(processes = 1)
-    
+
     # 1.
     # Each run returns a dict with the keys:
     #
